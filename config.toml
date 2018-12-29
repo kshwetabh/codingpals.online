@@ -5,17 +5,6 @@ assetDir = "static"
 # Site Template By: http://freehtml5.co/
 # https://freehtml5.co/twist-free-website-template-using-bootstrap/
 
-[params]
-siteDescription = "Find your coding buddy"
-author = "Kumar Shwetabh"
-keywords = "coding pals, programming buddies, code together, freelancer, javascript, html, css, java, go language"
-
-
-[params.hero]
-	heading= "A <span>Companion</span> For Your Coding Journey"
-    subheading = """We understand coding is <span>difficult</span> at times and that's why we are here. 
-    <br> Start a journey with one of our expert programmers to assist you in your coding job."""
-
 [menu]
 
 [[menu.main]]
@@ -47,3 +36,70 @@ keywords = "coding pals, programming buddies, code together, freelancer, javascr
 	url = "faq"
 	name 	= "FAQ"
 	weight	= 6
+
+[params]
+	siteDescription = "Find your coding buddy"
+	author = "Kumar Shwetabh"
+	keywords = "coding pals, programming buddies, code together, freelancer, javascript, html, css, java, go language"
+
+[params.hero]
+	heading= "A <span>Companion</span> For Your Coding Journey"
+    subheading = """We understand coding is <span>difficult</span> at times and that's why we are here. 
+    <br> Start a journey with one of our expert programmers to assist you in your coding job."""
+
+[params.services]
+	title = "Services We Offer"
+	subtitle = "We are a small group of developers having over a decade of experience in building software solutions for large and small businesses."
+
+[[params.services.service]]
+	icon = "icon-screen-desktop"
+	heading = "Help with Coding"
+	subheading = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+
+[[params.services.service]]
+	icon = "icon-people"
+	heading = "Pair Programming"
+	subheading = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+
+[[params.services.service]]
+	icon = "icon-loader"
+	heading = "Hand-crafted with Detailed"
+	subheading = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+
+[[params.services.service]]
+	icon = "icon-speech-bubble"
+	heading = "Peer Code Reviews"
+	subheading = "Let our experts review your code and find potential bugs. They may provide suggestions and recommendations on the best practices."
+
+[params.languages]
+	title = "We support following programming languages and technology stacks."
+
+[[params.languages.col1]]
+	icon = "icon-laptop"
+	heading = "Responsive Layout"
+	subheading = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+
+[[params.languages.col1]]
+	icon = "icon-cloud-download"
+	heading = "Free Download"
+	subheading = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+
+[[params.languages.col1]]
+	icon = "icon-hand-paper-o"
+	heading = "24/7 Help &amp; Support"
+	subheading = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+
+[[params.languages.col2]]
+	icon = "icon-lightbulb-o"
+	heading = "Free Update"
+	subheading = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+
+[[params.languages.col2]]
+	icon = "icon-trophy"
+	heading = "Featured Template"
+	subheading = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+
+[[params.languages.col2]]
+	icon = "icon-columns2"
+	heading = "Lots of Elements"
+	subheading = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
