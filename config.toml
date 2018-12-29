@@ -1,0 +1,43 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Coding Pals"
+assetDir = "static"
+
+[params]
+
+[params.hero]
+	heading= "A <span>Companion</span> For Your Coding Journey"
+    subheading = """We understand coding is <span>difficult</span> at times and that's why we are here. 
+    <br> Start a journey with one of our expert programmers to assist you in your coding job."""
+
+[menu]
+
+[[menu.main]]
+ 	name = "Home"
+	url = "home"
+	weight = 1
+
+[[menu.main]]
+	url	= "services"
+	name 	= "Services"
+	weight	= 2
+
+[[menu.main]]
+	url = "explore"
+	name 	= "Projects"
+	weight	= 3
+
+[[menu.main]]
+	url = "pricing"
+	name 	= "Pricing"
+	weight	= 4
+
+[[menu.main]]
+	url = "faq"
+	name 	= "FAQ"
+	weight	= 5
+
+[[menu.main]]
+	url 	= "/contactus"
+	name 	= "Contact Us"
+	weight	= 6
