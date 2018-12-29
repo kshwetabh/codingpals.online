@@ -2,8 +2,14 @@ baseURL = "https://kshwetabh.gitlab.io/codingpals/"
 languageCode = "en-us"
 title = "Coding Pals"
 assetDir = "static"
+# Site Template By: http://freehtml5.co/
+# https://freehtml5.co/twist-free-website-template-using-bootstrap/
 
 [params]
+siteDescription = "Find your coding buddy"
+author = "Kumar Shwetabh"
+keywords = "coding pals, programming buddies, code together, freelancer, javascript, html, css, java, go language"
+
 
 [params.hero]
 	heading= "A <span>Companion</span> For Your Coding Journey"
@@ -33,11 +39,11 @@ assetDir = "static"
 	weight	= 4
 
 [[menu.main]]
-	url = "faq"
-	name 	= "FAQ"
+	url 	= "contactus"
+	name 	= "Contact Us"
 	weight	= 5
 
 [[menu.main]]
-	url 	= "/contactus"
-	name 	= "Contact Us"
+	url = "faq"
+	name 	= "FAQ"
 	weight	= 6
