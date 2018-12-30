@@ -47,6 +47,14 @@
     });
   };
 
+  // Handle user clicks on Hero buttons
+  var clickHeroButtons = function() {
+    $(".hero-buttons").click(function(event) {
+      var section = $(this).data("hero-section");
+      $("a[data-nav-section='" + section + "']").click();
+    });
+  };
+
   // Page Nav
   var clickMenu = function() {
     $('#navbar a:not([class="external"])').click(function(event) {
@@ -638,6 +646,7 @@
     parallax();
     burgerMenu();
     clickMenu();
+    clickHeroButtons();
     windowScroll();
     navigationSection();
     testimonialCarousel();

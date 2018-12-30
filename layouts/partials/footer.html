@@ -1,19 +1,47 @@
-<!-- jQuery -->
-<script src="{{ .Site.BaseURL }}js/jquery.min.js"></script>
-<!-- jQuery Easing -->
-<script src="{{ .Site.BaseURL }}js/jquery.easing.1.3.js"></script>
-<!-- Bootstrap -->
-<script src="{{ .Site.BaseURL }}js/bootstrap.min.js"></script>
-<!-- Waypoints -->
-<script src="{{ .Site.BaseURL }}js/jquery.waypoints.min.js"></script>
-<!-- Stellar Parallax -->
-<script src="{{ .Site.BaseURL }}js/jquery.stellar.min.js"></script>
-<!-- Owl Carousel -->
-<script src="{{ .Site.BaseURL }}js/owl.carousel.min.js"></script>
-<!-- Counters -->
-<script src="{{ .Site.BaseURL }}js/jquery.countTo.js"></script>
-<!-- Google Map -->
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-<script src="{{ .Site.BaseURL }}js/google_map.js"></script>
-<!-- Main JS (Do not remove) -->
-<script src="{{ .Site.BaseURL }}js/main.js"></script>
+<div id="fh5co-footer" role="contentinfo">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 to-animate">
+					<h3 class="section-title">About Us</h3>
+					<p>{{ .Site.Params.aboutus }}</p>
+                    <p>&copy; 2018, {{ .Site.Title }} <br>All Rights Reserved. 
+                        <!-- <br> Theme by <a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a> -->
+					</p>
+				</div>
+
+                <div class="col-md-4 to-animate">
+                    <!-- Fake block for spacing  -->
+                </div>
+
+				<div class="col-md-4 to-animate">
+					<h3 class="section-title">Location</h3>
+					<ul class="contact-info">
+                        <li><i class="icon-phone"></i><a href="https://api.whatsapp.com/send?phone={{ .Site.Params.whatsapp }}">Chat on Whatsapp ({{ .Site.Params.whatsapp }})</a></li>
+						<li><i class="icon-envelope"></i><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></li>
+						<li><i class="icon-map-marker"></i>{{ .Site.Params.location }}</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Footer -->
+
+    <!-- jQuery -->
+    <script src="{{ .Site.BaseURL }}js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="{{ .Site.BaseURL }}js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="{{ .Site.BaseURL }}js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="{{ .Site.BaseURL }}js/jquery.waypoints.min.js"></script>
+    <!-- Stellar Parallax -->
+    <script src="{{ .Site.BaseURL }}js/jquery.stellar.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="{{ .Site.BaseURL }}js/owl.carousel.min.js"></script>
+    <!-- Counters -->
+    <script src="{{ .Site.BaseURL }}js/jquery.countTo.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
+    <script src="{{ .Site.BaseURL }}js/google_map.js"></script>
+    <!-- Main JS (Do not remove) -->
+    <script src="{{ .Site.BaseURL }}js/main.js"></script>

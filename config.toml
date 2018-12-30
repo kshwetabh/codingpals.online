@@ -17,10 +17,10 @@ assetDir = "static"
 	name 	= "Services"
 	weight	= 2
 
-[[menu.main]]
-	url = "explore"
-	name 	= "Projects"
-	weight	= 3
+# [[menu.main]]
+# 	url = "explore"
+# 	name 	= "Projects"
+# 	weight	= 3
 
 [[menu.main]]
 	url = "pricing"
@@ -40,7 +40,12 @@ assetDir = "static"
 [params]
 	siteDescription = "Find your coding buddy"
 	author = "Kumar Shwetabh"
-	keywords = "coding pals, programming buddies, code together, freelancer, javascript, html, css, java, go language"
+	keywords = "coding pals, programming buddies, code together, freelancer, javascript, react, vue, html, css, java, go language"
+	location = "Bangalore, India"
+	email = "codingpals@gmail.com"
+	whatsapp = "888 888 8888"
+	aboutus = "We are a group of passonate software developers trying to make best use of our skillsets by helping other developlers who need any technical support."				
+
 
 [params.hero]
 	heading= "A <span>Companion</span> For Your Coding Journey"
@@ -76,30 +81,25 @@ assetDir = "static"
 
 [[params.languages.col1]]
 	icon = "icon-laptop"
-	heading = "Responsive Layout"
+	heading = "Java & J2EE"
 	subheading = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
 
 [[params.languages.col1]]
 	icon = "icon-cloud-download"
-	heading = "Free Download"
+	heading = "JavaScript Frameworks (React, Vue, jQuery)"
 	subheading = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
 
 [[params.languages.col1]]
 	icon = "icon-hand-paper-o"
-	heading = "24/7 Help &amp; Support"
+	heading = "SQL (MSSQL and Oracle)"
 	subheading = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
 
 [[params.languages.col2]]
 	icon = "icon-lightbulb-o"
-	heading = "Free Update"
+	heading = "Frontend Technologies (HTML5, CSS/CSS3, JavaScript)"
 	subheading = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
 
 [[params.languages.col2]]
 	icon = "icon-trophy"
-	heading = "Featured Template"
-	subheading = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
-
-[[params.languages.col2]]
-	icon = "icon-columns2"
-	heading = "Lots of Elements"
+	heading = "Other Programming Languages (Python & Go)"
 	subheading = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
