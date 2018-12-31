@@ -28,14 +28,19 @@ assetDir = "static"
 	weight	= 4
 
 [[menu.main]]
+	url = "process"
+	name 	= "How It Works"
+	weight	= 5
+
+[[menu.main]]
 	url 	= "contactus"
 	name 	= "Contact Us"
-	weight	= 5
+	weight	= 6
 
 [[menu.main]]
 	url = "faq"
 	name 	= "FAQ"
-	weight	= 6
+	weight	= 7
 
 [params]
 	siteDescription = "Find your coding buddy"
@@ -45,7 +50,13 @@ assetDir = "static"
 	email = "codingpals@gmail.com"
 	whatsapp = "888 888 8888"
 	aboutus = "We are a group of passonate software developers trying to make best use of our skillsets by helping other developlers who need any technical support."				
-
+	showTeams = false
+	showClients = false
+	showProjects = false
+	showPricing = true
+	showFaqs = true
+	showContactUs = true
+	showProcess = true
 
 [params.hero]
 	heading= "A <span>Companion</span> For Your Coding Journey"

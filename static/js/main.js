@@ -53,6 +53,10 @@
       var section = $(this).data("hero-section");
       $("a[data-nav-section='" + section + "']").click();
     });
+    $(".pricing").click(function(event) {
+      var section = $(this).data("pricing-section");
+      $("a[data-nav-section='" + section + "']").click();
+    });
   };
 
   // Page Nav
@@ -518,6 +522,51 @@
     }
   };
 
+  var processAnimate = function() {
+    var faq = $("#fh5co-process");
+    if (faq.length > 0) {
+      faq.waypoint(
+        function(direction) {
+          if (direction === "down" && !$(this.element).hasClass("animated")) {
+            var sec = faq.find(".to-animate").length,
+              sec = parseInt(sec * 200 + 400);
+
+            setTimeout(function() {
+              faq.find(".to-animate").each(function(k) {
+                var el = $(this);
+
+                setTimeout(
+                  function() {
+                    el.addClass("fadeIn animated");
+                  },
+                  k * 200,
+                  "easeInOutExpo"
+                );
+              });
+            }, 200);
+
+            setTimeout(function() {
+              faq.find(".to-animate-2").each(function(k) {
+                var el = $(this);
+
+                setTimeout(
+                  function() {
+                    el.addClass("fadeInUp animated");
+                  },
+                  k * 200,
+                  "easeInOutExpo"
+                );
+              });
+            }, sec);
+
+            $(this.element).addClass("animated");
+          }
+        },
+        { offset: "80%" }
+      );
+    }
+  };
+
   var trustedAnimate = function() {
     var trusted = $("#fh5co-trusted");
     if (trusted.length > 0) {
@@ -661,6 +710,7 @@
     servicesAnimate();
     teamAnimate();
     faqAnimate();
+    processAnimate();
     trustedAnimate();
     footerAnimate();
     blogAnimate();
