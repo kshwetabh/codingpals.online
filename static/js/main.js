@@ -695,7 +695,7 @@
     form.submit(function(e) {
       e.preventDefault();
 
-      $this = $(this);
+      var $this = $(this);
 
       $.post(
         $(this).attr("action"),
