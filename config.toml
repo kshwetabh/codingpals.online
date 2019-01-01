@@ -79,7 +79,7 @@ assetDir = "static"
 
 [[params.services.service]]
 	icon = "icon-loader"
-	heading = "Hand-crafted with Detailed"
+	heading = "Technical Consultation"
 	subheading = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
 
 [[params.services.service]]
@@ -114,3 +114,46 @@ assetDir = "static"
 	icon = "icon-trophy"
 	heading = "Other Programming Languages (Python & Go)"
 	subheading = "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts."
+
+[params.processes]
+	heading = "How does this work"
+	subheading = "Everything you need to know before you get started"
+
+[[params.processes.process]]
+	title = "You submit the details of your requirement, project, technology stack, etc. through our Contact Us form."
+
+[[params.processes.process]]
+	title = "Based on the request and details provided, an expert will be assigned to go over the requirements in detail. This happens through a voice call or chat in whatever way you are comfortable."
+
+[[params.processes.process]]
+	title = "The expert will then assess the task. Only if the expert is 100% confident that he will be able to help and contribute fully to the project, he will accept the assignment."
+
+[[params.processes.process]]
+	title = "Once you and the technical expert agree to proceed further, provided you are comfortable working with him, you can transfer the money to the expert's account."
+
+[[params.processes.process]]	
+	title = "You and the assigned expert can start communicating on the project related needs once the transfer is complete. That's all. No 3rd party involvement or complicated processes."
+
+[params.faqs]
+	heading = "Common Questions"
+	subheading = "We have got some questions already answered for you"
+
+[[params.faqs.faq]]
+	heading = "Common Questions"
+	subheading = "You submit the details of your requirement, project, technology stack, etc. through our Contact Us form."
+
+[[params.faqs.faq]]
+	heading = "Common Questions"
+	subheading = "You submit the details of your requirement, project, technology stack, etc. through our Contact Us form."
+
+[[params.faqs.faq]]
+	heading = "Common Questions"
+	subheading = "You submit the details of your requirement, project, technology stack, etc. through our Contact Us form."
+
+[[params.faqs.faq]]
+	heading = "Common Questions"
+	subheading = "You submit the details of your requirement, project, technology stack, etc. through our Contact Us form."
+
+[[params.faqs.faq]]	
+	heading = "Common Questions"
+	subheading = "You submit the details of your requirement, project, technology stack, etc. through our Contact Us form."

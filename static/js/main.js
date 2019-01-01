@@ -692,8 +692,33 @@
 
   var contactForm = function() {
     var form = $(".query-form");
+
     form.submit(function(e) {
+      var valid = true,
+        message = "";
+
       e.preventDefault();
+
+      $("form input").each(function() {
+        var $self = $(this);
+        if (!$self.val()) {
+          //var inputName = $self.attr("name");
+          valid = false;
+          message =
+            "Please make sure to enter Name, Email Id, Language or Framework details about your work and submit your query.";
+          return false;
+        }
+      });
+      if (!valid) {
+        $("#contact-message")
+          .html(
+            '<div class="alert alert-error" style="background-color: rgba(250, 85, 85, 0.8);color:white;" role="alert"><button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>' +
+              message +
+              "</div>"
+          )
+          .fadeIn();
+        return;
+      }
 
       var $this = $(this);
 
@@ -705,7 +730,7 @@
 
           $("#contact-message")
             .html(
-              '<div class="alert alert-success" style="background-color: rgba(250, 85, 85, 0.8);color:white;" role="alert"><button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>Thank you for getting in touch. We will get back to you soon!</div>'
+              '<div class="alert alert-success" style="background-color: rgba(250, 85, 85, 0.8);color:white;" role="alert"><button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>Thank you for your query. We will get back to you soon!</div>'
             )
             .fadeIn();
         },
@@ -718,7 +743,7 @@
 
           $("#contact-message")
             .html(
-              '<div class="alert alert-success" style="background-color: rgba(250, 85, 85, 0.8);color:white;" role="alert"><button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>Thank you for getting in touch. We will get back to you soon!</div>'
+              '<div class="alert alert-success" style="background-color: rgba(250, 85, 85, 0.8);color:white;" role="alert"><button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>Thank you for your query. We will get back to you soon!</div>'
             )
             .fadeIn();
         });

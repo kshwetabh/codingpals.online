@@ -1,65 +1,54 @@
 <section id="fh5co-process" class="fh5co-bg-color" data-section="process">
-		<div class="fh5co-faq">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 section-heading text-center">
-						<h2 class="to-animate"><span>How does this work</span></h2>
-						<div class="row">
-							<div class="col-md-8 col-md-offset-2 subtext">
-								<h3 class="to-animate">Everything you need to know before you get started</h3>
-							</div>
+	<div class="fh5co-faq">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate"><span>{{.Site.Params.processes.heading}}</span></h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext">
+							<h3 class="to-animate">{{.Site.Params.processes.subheading}}</h3>
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-6">
-						<div class="box-faq to-animate-2">
-							<i class="icon-check2"></i>
-							<div class="desc">
-								<h3>What is Twist?</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-							</div>
-						</div>
-						<div class="box-faq to-animate-2">
-							<i class="icon-check2"></i>
-							<div class="desc">
-								<h3>I have technical problem, who do I email? </h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-							</div>
-						</div>
-						<div class="box-faq to-animate-2">
-							<i class="icon-check2"></i>
-							<div class="desc">
-								<h3>How do I use Twist features?</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-							</div>
+			</div>
+			<div class="row">
+				{{ $noOfProcesses := len .Site.Params.processes.process }}
+				<div class="col-md-6">
+				{{ range $index, $element := .Site.Params.processes.process }}
+					{{ if le $index (div $noOfProcesses 2)}}
+					<div class="box-faq to-animate-2">
+						<i class="icon-check-square-o"></i>
+						<div class="desc">
+							<p> {{ .title }}</p>
+							{{ if ne $index (div $noOfProcesses 2)}}
+							<p style="text-align:center;font-size:2rem;"><i style="width:100%;" class="icon-arrow-down2"></i></p>
+							{{ end }}
 						</div>
 					</div>
-
-					<div class="col-md-6">
-						<div class="box-faq to-animate-2">
-							<i class="icon-check2"></i>
-							<div class="desc">
-								<h3>What language are available?</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-							</div>
+					{{ end }}
+				{{ end }}
+				</div>
+				<div class="col-md-6">
+				{{ range $index, $element := .Site.Params.processes.process }}
+					{{ if gt $index (div $noOfProcesses 2)}}
+					<div class="box-faq to-animate-2">
+						<i class="icon-check-square-o"></i>
+						<div class="desc">
+							<p>{{ .title }}</p>
+							{{ if ne $index (div $noOfProcesses 2)}}
+							<p style="text-align:center;font-size:2rem;"><i style="width:100%;" class="icon-arrow-down2"></i></p>
+							{{ end }}
 						</div>
-						<div class="box-faq to-animate-2">
-							<i class="icon-check2"></i>
-							<div class="desc">
-								<h3>Can I have a username that is already taken?</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-							</div>
-						</div>
-						<div class="box-faq to-animate-2">
-							<i class="icon-check2"></i>
-							<div class="desc">
-								<h3>Is Twist free?</h3>
-								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-							</div>
+					</div>
+					{{ end }}
+				{{ end }}
+					<div class="box-faq to-animate-2">
+						<div class="desc" style="text-align:center;">
+							<p>DONE</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
+</section>

@@ -1,55 +1,52 @@
 
 <!DOCTYPE html>
 	<!-- Header -->
-	{{ partial "header.html" . }}
+	{{- partial "header.html" . }}
 	<body>
 	<!-- Navigation -->
-	{{ partial "nav.html" . }}
+	{{- partial "nav.html" . }}
 
-	{{ partial "hero.html" . }}
+	{{- partial "hero.html" . }}
 
 	<!-- Services -->
-	{{ partial "services.html" . }}
+	{{- partial "services.html" . }}
 
-	<!-- {{ partial "projects.html" . }} -->
-	{{ if .Site.Params.showProjects }}
-	{{ partial "projects.html" . }}
-	{{ end }}
+	{{- if .Site.Params.showProjects }}
+	{{- partial "projects.html" . }}
+	{{- end }}
 
 	<!-- Clients -->
-	{{ if .Site.Params.showClients }}
-	{{ partial "clients.html" . }}
-	{{ end }}
+	{{- if .Site.Params.showClients }}
+	{{- partial "clients.html" . }}
+	{{- end }}
 
 	<!-- Pricing -->
-	{{ if .Site.Params.showPricing }}
-	{{ partial "pricing.html" . }}
-	{{ end }}
+	{{- if .Site.Params.showPricing }}
+	{{- partial "pricing.html" . }}
+	{{- end }}
 		
 	<!-- How Does It Work - Process -->
-	{{ if .Site.Params.showProcess }}
-	{{ partial "process.html" . }}
-	{{ end }}
+	{{- if .Site.Params.showProcess }}
+	{{- partial "process.html" . }}
+	{{- end }}
 
-		<!-- Team -->
-	{{ if .Site.Params.showTeams }}
-	{{ partial "team.html" . }}
-	{{ end }}
+	<!-- Team -->
+	{{- if .Site.Params.showTeams }}
+	{{- partial "team.html" . }}
+	{{- end }}
 
 	<!-- Contact Us -->
-	{{ if .Site.Params.showContactUs }}
-	{{ partial "contactus.html" . }}
-	{{ end }}
+	{{- if .Site.Params.showContactUs }}
+	{{- partial "contactus.html" . }}
+	{{- end }}
 	
 	<!-- FAQs -->
-	{{ if .Site.Params.showFaqs }}
-	{{ partial "faqs.html" . }}
-	{{ end }}
+	{{- if .Site.Params.showFaqs }}
+	{{- partial "faqs.html" . }}
+	{{- end }}
 
 	<!-- footer -->
-	{{ partial "footer.html" . }}
-	
-
+	{{- partial "footer.html" . }}
 	</body>
 </html>
 
