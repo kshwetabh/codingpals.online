@@ -54,6 +54,7 @@ googleAnalytics = "UA-33087369-2"
 	showTeams = false
 	showClients = false
 	showProjects = false
+	showVisitorCounter = true
 	showPricing = true
 	showFaqs = true
 	showContactUs = true
