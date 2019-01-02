@@ -2,6 +2,7 @@ baseURL = "https://kshwetabh.gitlab.io/codingpals/"
 languageCode = "en-us"
 title = "Coding Pals"
 assetDir = "static"
+googleAnalytics = "UA-33087369-2"
 # Site Template By: http://freehtml5.co/
 # https://freehtml5.co/twist-free-website-template-using-bootstrap/
 
@@ -49,7 +50,7 @@ assetDir = "static"
 	location = "Bangalore, India"
 	email = "codingpals@gmail.com"
 	whatsapp = "888 888 8888"
-	aboutus = "We are a group of passonate software developers trying to make best use of our skillsets by helping other developlers who need any technical support."				
+	aboutus = "We are a group of passionate software developers trying to make best use of our skillsets by helping other developers who need any technical support."				
 	showTeams = false
 	showClients = false
 	showProjects = false
