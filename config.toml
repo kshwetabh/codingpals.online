@@ -1,4 +1,5 @@
 baseURL = "https://codingpals.online/"
+publishDir = "docs"
 languageCode = "en-us"
 title = "Coding Pals"
 assetDir = "static"
