@@ -681,11 +681,11 @@
       $("#fh5co-counter-section").waypoint(
         function(direction) {
           if (direction === "down" && !$(this.element).hasClass("animated")) {
-            setTimeout(counter, 400);
+            setTimeout(counter, 1000);
             $(this.element).addClass("animated");
           }
-        },
-        { offset: "90%" }
+        }
+        // { offset: "90%" }
       );
     }
   };
@@ -751,6 +751,23 @@
     });
   };
 
+  var incrementVisitorCount = function() {
+    var $this = $(this);
+    var jqxhr = $.ajax({
+      url:
+        "https://script.google.com/macros/s/AKfycbwh5_hApfdqdkME4ihbbzcT2MbBExQrDWbaJTS7QgGdzp_prWPv/exec",
+      method: "GET",
+      dataType: "json",
+      data: ""
+    }).done(function(res) {
+      if (res && res.count) {
+        var visitCounter = $(".js-counter");
+        visitCounter.attr("data-to", res.count);
+        counter();
+      }
+    });
+  };
+
   // Document on load.
   $(function() {
     parallax();
@@ -760,7 +777,7 @@
     windowScroll();
     navigationSection();
     testimonialCarousel();
-
+    incrementVisitorCount();
     // Animations
     homeAnimate();
     exploreAnimate();
@@ -775,7 +792,6 @@
     trustedAnimate();
     footerAnimate();
     blogAnimate();
-    counter();
     counterWayPoint();
     contactForm();
   });

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coding Pals</title>
-    <link>https://kshwetabh.gitlab.io/codingpals/</link>
+    <link>https://codingpals.online/</link>
     <description>Recent content on Coding Pals</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 29 Dec 2018 02:57:36 +0530</lastBuildDate>
     
-	<atom:link href="https://kshwetabh.gitlab.io/codingpals/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://codingpals.online/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Contactus</title>
-      <link>https://kshwetabh.gitlab.io/codingpals/contactus/</link>
+      <link>https://codingpals.online/contactus/</link>
       <pubDate>Sat, 29 Dec 2018 02:57:36 +0530</pubDate>
       
-      <guid>https://kshwetabh.gitlab.io/codingpals/contactus/</guid>
+      <guid>https://codingpals.online/contactus/</guid>
       <description>Test</description>
     </item>
     

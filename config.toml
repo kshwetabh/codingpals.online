@@ -1,4 +1,4 @@
-baseURL = "https://kshwetabh.gitlab.io/codingpals/"
+baseURL = "https://codingpals.online/"
 languageCode = "en-us"
 title = "Coding Pals"
 assetDir = "static"
